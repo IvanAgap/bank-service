@@ -1,0 +1,41 @@
+{
+  "root": true,
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "plugin:react/recommended",
+    "standard-with-typescript",
+    "plugin:import/typescript",
+    "plugin:prettier/recommended",
+    "plugin:react/recommended"
+  ],
+  "parser":  "@typescript-eslint/parser",
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx"],
+      "parserOptions": {
+        "project": "./tsconfig.json"
+      }
+    }
+  ],
+  "parserOptions": {
+    "project": "./tsconfig.json",
+    "tsconfigRootDir": "./"
+  },
+  "plugins": ["react", "prettier", "jest", "@typescript-eslint"],
+  "rules": {
+    "prettier/prettier": "error",
+    "@typescript-eslint/triple-slash-reference": "off",
+    "@typescript-eslint/strict-boolean-expressions": "off",
+    "@typescript-eslint/no-var-requires": "off",
+    "@typescript-eslint/prefer-nullish-coalescing": "off",
+    "react/react-in-jsx-scope": "off"
+  }
+}
