@@ -33,6 +33,13 @@ yarn build
 
 After this command the app builds to the build folder.
 
+### Run tests
+
+After writing some page or components you need to switch to the test directory on root project and write some tests. For running tests you can use this command:
+
+```sh
+yarn test
+```
 
 After this command you tests will run.
 

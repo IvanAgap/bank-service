@@ -6,7 +6,7 @@
     "target": "es2020",
     "jsx": "react-jsx",
     "lib": ["es2020", "dom"],
-    "types": ["node"],
+    "types": ["@testing-library/jest-dom", "jest", "node"],
     //allow rules
     "declaration": true,
     "noEmit": true,
@@ -37,8 +37,11 @@
   "include": [
     "webpack.config.js",
     "declaration.d.ts",
+    "jest.config.js",
     "src/**/*.ts",
     "src/**/*.tsx",
+    "tests/**/*.ts",
+    "tests/**/*.tsx",
   ],
   "exclude": ["node_modules"],
 }
