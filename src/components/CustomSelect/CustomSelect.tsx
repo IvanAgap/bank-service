@@ -6,7 +6,6 @@ import { Spinner } from '../Spinner/Spinner';
 import { type ISelectProps } from './types';
 
 import styles from './styles.module.scss';
-
 export const CustomSelect: FC<ISelectProps> = ({
   options = [],
   placeholder,
@@ -58,7 +57,7 @@ export const CustomSelect: FC<ISelectProps> = ({
       </div>
       {isOpen &&
         (isFetching ? (
-          <div className={styles.spinner_wrapper}>
+          <div>
             <Spinner />
           </div>
         ) : (

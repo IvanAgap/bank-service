@@ -4,7 +4,6 @@ interface CssExports {
   placeholder: string;
   select: string;
   select_wrapper: string;
-  spinner_wrapper: string;
 }
 export const cssExports: CssExports;
 export default cssExports;
