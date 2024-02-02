@@ -1,6 +1,7 @@
 import { type FC, type MouseEventHandler, useEffect, useRef, useState } from 'react';
 
 import { MenuItem } from '../MenuItem/MenuItem';
+import { Spinner } from '../Spinner/Spinner';
 
 import { type ISelectProps } from './types';
 
