@@ -1,0 +1,14 @@
+.option {
+  width: 181px;
+  height: 43px;
+  border: 1px solid #dad6d6;
+  font-size: 18px;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+
+  &:hover {
+    background: #f0efef;
+  }
+}
